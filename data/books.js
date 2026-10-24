@@ -155,5 +155,38 @@ window.BOOKS = [
     author: "Oscar Wilde",
     country: "United Kingdom",
     finished: "2025-05-07"
-  }
+  },
+  {
+    title: "The World of Yesterday: Memoirs of a European",
+    author: "Stefan Zweig",
+    country: "Austria",
+    finished: "2025-18-06",
+    club: "lit"
+  },
+  {
+    title: "Man's Seach for Meaning",
+    author: "Viktor Frankl",
+    country: "Austria",
+    finished: "2025-11-06"
+  },
+  {
+    title: "A Gentleman In Moscow",
+    author: "Amor Towles",
+    country: "United States",
+    finished: "2025-05-05"
+  },
+  {
+    title: "Ud Calan Kadinlar",
+    author: "Reha Tanor",
+    country: "Turkey",
+    finished: "2025-15-03"
+  },
+  {
+    title: "Huzur",
+    author: "Ahmet Hamdi Tanpinar",
+    country: "Turkey",
+    finished: "2025-26-01",
+    club: "lit"
+  },
+
 ];
