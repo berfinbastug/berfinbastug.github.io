@@ -116,14 +116,14 @@ window.BOOKS = [
     author: "Irvin D. Yalom",
     country: "United States",
     finished: "2025-12-14",
-    isbn: "0349410070"
+    cover: "images/covers/becoming-myself.jpg"
   },
   {
     title: "Askin Halleri",
     author: "Alper Hasanoglu",
     country: "Turkey",
     finished: "2025-11-29",
-    isbn: "6258393039"
+    cover: "images/covers/askin-halleri.jpg"
   },
   {
     title: "The Course of Love",
@@ -142,19 +142,15 @@ window.BOOKS = [
     title: "The Master and Margarita",
     author: "Mikhail Bulgakov",
     finished: "2025-01-09",
+    cover: "images/covers/bulgakov.jpg",
     club: "lit"
   },
   {
     title: "The Picture of Dorian Gray",
     author: "Oscar Wilde",
     country: "United Kingdom",
-    finished: "2025-05-07"
-  },
-  {
-    title: "The Picture of Dorian Gray",
-    author: "Oscar Wilde",
-    country: "United Kingdom",
-    finished: "2025-05-07"
+    finished: "2025-05-07",
+    cover: "images/covers/oscar-wilde.jpg"
   },
   {
     title: "The World of Yesterday: Memoirs of a European",
