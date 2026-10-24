@@ -188,5 +188,183 @@ window.BOOKS = [
     finished: "2025-26-01",
     club: "lit"
   },
-
+  {
+    title: "Naive Super",
+    author: "Erlend Loe",
+    country: "Norway",
+    finished: "2024-01-11",
+    club: "lit"
+  },
+  {
+    title: "Blitzed: Drugs in Nazi Germany",
+    author: "Norman Ohler",
+    country: "Germany",
+    finished: "2024-26-11"
+  },
+  {
+    title: "Benim Adim Kirmizi",
+    author: "Orhan Pamuk",
+    country: "Turkey",
+    finished: "2024-12-09"
+  },
+  {
+    title: "Bridge on the Drina",
+    author: "Ivo Andric",
+    country: "Serbia",
+    finished: "2024-15-08",
+    club: "lit"
+  },
+  {
+    title: "Ben Frankfurt'ta Soforken",
+    author: "Aydin Engin",
+    country: "Turkey",
+    finished: "2024-26-06"
+  },
+  {
+    title: "Disgrace",
+    author: "J.M Coetzee",
+    country: "South Africa",
+    finished: "2024-20-06",
+    club: "lit"
+  },
+  {
+    title: "Masumiyet Muzesi",
+    author: "Orhan Pamuk",
+    country: "Turkey",
+    finished: "2024-14-05",
+    club: "lit"
+  },
+  {
+    title: "A History of the World in 10 1/2 Chapters",
+    author: "Julian Barnes",
+    country: "United Kingdom",
+    finished: "2024-28-04",
+    club: "lit"
+  },
+  {
+    title: "SPQR",
+    author: "Mary Beard",
+    country: "United Kingdom",
+    finished: "2024-03-04"
+  },
+  {
+    title: "Hamlet",
+    author: "William Shakespeare",
+    country: "United Kingdom",
+    finished: "2024-31-03",
+    club: "lit"
+  },
+  {
+    title: "Onca Yoksulluk Varken",
+    author: "Emil Ajar",
+    country: "France",
+    finished: "2024-10-02",
+    club: "lit"
+  },
+  {
+    title: "Simple Passions",
+    author: "Annie Ernaux",
+    country: "France",
+    finished: "2024-30-01",
+    club: "lit"
+  },
+  {
+    title: "The Notebook, the Proof, the Third Lie",
+    author: "Agota Kristof",
+    country: "Hungary",
+    finished: "2023-17-12",
+    club: "lit"
+  },
+  {
+    title: "Climates of Love",
+    author: "André Maurois",
+    country: "France",
+    finished: "2023-20-11",
+    club: "lit"
+  },
+  {
+    title: "The Merchant of Venice",
+    author: "William Shakespeare",
+    country: "United Kingdom",
+    finished: "2023-14-11"
+  },
+  {
+    title: "Confessions",
+    author: "Jean-Jacques Rousseau",
+    country: "France",
+    finished: "2023-05-11"
+  },
+  {
+    title: "Death in Venice",
+    author: "Thomas Mann",
+    country: "Germany",
+    finished: "2023-22-10",
+    club: "lit"
+  },
+  {
+    title: "Unbearable Lightness of Being",
+    author: "Milan Kundera",
+    country: "Czech Republic",
+    finished: "2023-01-11"
+  },
+  {
+    title: "Escape from Freedom",
+    author: "Erich Fromm",
+    country: "Germany",
+    finished: "2023-01-16"
+  },
+  {
+    title: "Freud and Beyond",
+    author: "Stephen A. Mitchell",
+    country: "United States",
+    finished: "2023-01-02"
+  },
+  {
+    title: "Death of a Salesman",
+    author: "Arthur Miller",
+    country: "United States",
+    finished: "2023-01-01"
+  },
+  {
+    title: "Nibelungenlied",
+    author: "Arthur Miller",
+    country: "Germany",
+    finished: "2022-10-12"
+  },
+  {
+    title: "Adim Agop Memleketim Tokat",
+    author: "Agop Arslanyan",
+    country: "Turkey",
+    finished: "2022-28-08"
+  },
+  {
+    title: "Gönül ki Yetişmekte",
+    author: "Gustave Flaubert",
+    country: "France",
+    finished: "2022-15-08"
+  },
+  {
+    title: "The Hunchback of Notre Dame",
+    author: "Victor Hugo",
+    country: "France",
+    finished: "2022-04-07"
+  },
+  {
+    title: "Don't Look Back in Anger",
+    author: "John Osborne",
+    country: "United Kingdom",
+    finished: "2022-24-05"
+  },
+  {
+    title: "Perfume",
+    author: "Patrick Suskind",
+    country: "Germany",
+    finished: "2022-01-05"
+  },
+  {
+    title: "The Cherry Orchard",
+    author: "Anton Chekhov",
+    country: "Russiaa",
+    finished: "2022-01-03"
+  },
 ];
