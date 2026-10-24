@@ -412,6 +412,12 @@ window.BOOKS = [
     finished: "2021-01-02"
   },
   {
+    title: "The Name of the Rose",
+    author: "Umberto Eco",
+    country: "Italy",
+    finished: "2020-01-08"
+  },
+  {
     title: "Don Quixote",
     author: "Cervantes",
     country: "Spain",
