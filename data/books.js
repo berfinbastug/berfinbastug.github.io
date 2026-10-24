@@ -51,7 +51,7 @@ window.BOOKS = [
       author: "Tommy Orange",
       country: "United States",
       finished: "2026-10-17",
-      isbn: "0525436146"
+      cover: "images/covers/there-there.jpg"
   },
   {
     title: "Re-Engineering Philosophy for Limited Beings",
@@ -73,7 +73,7 @@ window.BOOKS = [
     author: "Tom Holland",
     country: "United Kingdom",
     finished: "2026-09-27",
-    isbn: "0349141207"
+    cover: "images/covers/dominion.jpg"
   },
   {
     title: "Ways of Seeing",
