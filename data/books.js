@@ -109,7 +109,7 @@ window.BOOKS = [
     author: "Javier Marías",
     country: "Spain",
     finished: "2026-01-01",
-    isbn: "0141199954"
+    cover: "images/covers/a-heart-so-white.jpg"
   },
   {
     title: "Becoming Myself: A Psychiatrist's Memoir",
