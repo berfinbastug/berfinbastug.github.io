@@ -10,24 +10,24 @@
    ============================================================ */
 
 :root {
-  --plaster: #f7f2ea;        /* page */
-  --plaster-light: #fcfaf6;  /* cards */
-  --plaster-deep: #efe6d8;   /* picture mats, placeholders */
-  --ink: #4a3b31;            /* text */
-  --muted: #7c6a5c;
-  --line: #e6dccd;
-  --title: #5e4337;          /* book and film titles */
-  --rose: #b47c6d;           /* large headings */
-  --rose-ink: #9a6255;       /* small rose text */
-  --lapis: #46708a;          /* links */
-  --powder: #9cbcd0;
-  --powder-tint: #e4edf2;
-  --powder-ink: #3f6075;
-  --ochre: #e2cb9f;
-  --sage: #b5bea3;
-  --sage-tint: #e7eadc;
-  --sage-ink: #5b6447;
-  --blush: #ecc9b9;
+  --plaster: #f0f2f2;        /* page background: the wall */
+  --plaster-light: #f8f9f9;  /* cards */
+  --plaster-deep: #e3e7e8;   /* picture mats, placeholders */
+  --ink: #2b3229;            /* text: window green */
+  --muted: #5b6359;          /* softer text: dates, authors */
+  --line: #d5dbdc;           /* thin dividers */
+  --title: #2b3229;          /* book and film titles */
+  --rose: #8c2f14;           /* accent: blanket red, headings */
+  --rose-ink: #8c2f14;       /* small accent text */
+  --lapis: #3f5f7f;          /* links: door blue */
+  --powder: #9fb0c2;         /* link underlines */
+  --powder-tint: #e1e8ef;    /* science club badge */
+  --powder-ink: #34506b;
+  --ochre: #c99a1a;          /* painted band: bed yellow */
+  --sage: #5d7389;           /* painted band, placeholder borders */
+  --sage-tint: #ece7d3;      /* literature club badge */
+  --sage-ink: #5e4f12;
+  --blush: #b8936a;          /* painted band, quotation lines: floorboards */
 
   --font-display: "Crimson Text", "Palatino Linotype", Palatino, Georgia, serif;
   --font-body: "Crimson Text", "Palatino Linotype", Palatino, Georgia, serif;
@@ -40,7 +40,7 @@
   /* very faint plaster grain */
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.33 0 0 0 0 0.22 0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   /* running spiral, one repeat */
-  --spiral: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cpath d='M0 20 C20 20 20 6 40 6 A14 14 0 1 1 26 20 A11 11 0 0 1 48 20 A9 9 0 0 1 30 20 A7 7 0 0 1 44 20 A5 5 0 0 1 34 20 A3 3 0 0 1 40 20 M40 34 C60 34 60 20 80 20' fill='none' stroke='%23c9a397' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  --spiral: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cpath d='M0 20 C20 20 20 6 40 6 A14 14 0 1 1 26 20 A11 11 0 0 1 48 20 A9 9 0 0 1 30 20 A7 7 0 0 1 44 20 A5 5 0 0 1 34 20 A3 3 0 0 1 40 20 M40 34 C60 34 60 20 80 20' fill='none' stroke='%23b8936a' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 /* ---------- Base ---------- */
@@ -193,7 +193,7 @@ main { padding-block: 3.5rem 5rem; }
   margin-bottom: 0.3rem;
 }
 .kind.award { color: var(--powder-ink); background: var(--powder-tint); }
-.kind.humanities { color: var(--rose-ink); background: #f6e5dd; }
+.kind.humanities { color: var(--rose-ink); background: #f2e0d9; }
 @media (max-width: 580px) { .timeline li { grid-template-columns: 1fr; gap: 0.2rem; } }
 
 /* ---------- Research ---------- */

@@ -12,9 +12,9 @@
 
   // Faded pigments for covers without a picture: [background, letter]
   var PIGMENTS = [
-    ["#ecc9b9", "#7a5246"], ["#e2cb9f", "#6b5230"], ["#c9d2b8", "#4f5a3c"],
-    ["#c4d8e4", "#3f6075"], ["#e8d9cc", "#6e5446"], ["#d9c2c9", "#6a4552"],
-    ["#d6cfb8", "#5e5639"]
+    ["#c99a1a", "#3d2c06"], ["#c4ccd0", "#2f3a44"], ["#b8936a", "#3d2a17"],
+    ["#cbbf5a", "#3f3a10"], ["#b4722c", "#2e1a08"], ["#5d7389", "#f0f2f2"],
+    ["#8c2f14", "#f3e3d6"]
   ];
 
   function esc(s) {
