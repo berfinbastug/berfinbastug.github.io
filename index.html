@@ -1,11 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First GitHub Page</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Berfin Bastug</title>
+<meta name="description" content="Berfin Bastug, PhD candidate in cognitive psychology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans+SC:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, world!</h1>
-    <p>This is my first GitHub Pages website.</p>
+
+<!-- ============================================================
+     HOW TO EDIT THIS PAGE
+     Everything in [square brackets] is a placeholder.
+     Replace it with your own text and delete the brackets.
+
+     Pictures go in a folder called "images":
+       images/photo.jpg        your portrait
+       images/research-1.jpg   illustration for research theme 1
+       images/research-2.jpg   illustration for research theme 2
+       images/research-3.jpg   illustration for research theme 3
+     Until a picture is uploaded, a dashed placeholder shows.
+     ============================================================ -->
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Berfin Bastug</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a class="to-leisure" href="leisure.html">Leisure</a>
+    </nav>
+  </div>
+  <div class="bands" aria-hidden="true"></div>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== NAME AND PHOTO ===================== -->
+  <section class="hero" aria-label="Introduction">
+    <div class="frame portrait">
+      <img src="images/photo.jpg" alt="Portrait of Berfin Bastug"
+           onerror="this.parentElement.classList.add('missing'); this.remove();">
+      <span class="stand-in" aria-hidden="true">BB</span>
+    </div>
+    <div>
+      <p class="label">PhD candidate · Cognitive Psychology</p>
+      <h1>Berfin Bastug</h1>
+      <p class="lede">
+        I study [your research topic, e.g. how memory shapes what we perceive] in the
+        [Lab name] at [University]. I came to psychology from the humanities, and I still
+        read and watch films <em>to see how others have imagined the mind.</em>
+      </p>
+      <ul class="contact">
+        <li><span class="email">[your.name@university.edu]</span></li>
+        <li><a href="#">Google Scholar</a></li>
+        <li><a href="#">ORCID</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">CV (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT & CV ===================== -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <p class="label">Curriculum vitae</p>
+      <h2>About</h2>
+    </div>
+
+    <div class="prose">
+      <p>
+        [Two or three sentences about who you are. For example: I am a third-year PhD
+        candidate at [University], supervised by [Advisor]. My work combines behavioral
+        experiments with [method] to understand [question].]
+      </p>
+      <p>
+        [A sentence about your path. For example: Before psychology, I studied
+        [humanities field], and questions from literature and philosophy still shape
+        the questions I ask in the lab.]
+      </p>
+    </div>
+
+    <!-- CV, newest first. Copy one <li>…</li> block to add an entry.
+         Label colors: class="kind" (ochre, education), "kind research" (green),
+         "kind award" (blue), "kind humanities" (red) -->
+    <ol class="timeline">
+      <li>
+        <span class="when">2023 – present</span>
+        <div>
+          <span class="kind">Education</span>
+          <h3>PhD in Cognitive Psychology</h3>
+          <p>[University], [City]. Advisor: [Name]. Dissertation: [working title].</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2024</span>
+        <div>
+          <span class="kind award">Award</span>
+          <h3>[Grant or award name]</h3>
+          <p>[Awarding body]. [One line on what it funded.]</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2021 – 2023</span>
+        <div>
+          <span class="kind">Education</span>
+          <h3>MSc in [Field]</h3>
+          <p>[University], [City]. Thesis: [title].</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2020 – 2021</span>
+        <div>
+          <span class="kind research">Research</span>
+          <h3>Research assistant, [Lab name]</h3>
+          <p>[University]. [What you worked on.]</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2016 – 2020</span>
+        <div>
+          <span class="kind humanities">Humanities</span>
+          <h3>BA in [Field]</h3>
+          <p>[University], [City]. [Your humanities coursework: literature, philosophy, history…]</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <!-- Each theme has a picture slot. Upload images/research-1.jpg etc.
+       To drop a picture, delete that theme's <figure>…</figure>. -->
+  <section class="section" id="research">
+    <div class="section-head">
+      <p class="label">What I work on</p>
+      <h2>Research</h2>
+    </div>
+    <div class="themes">
+      <article class="theme">
+        <div class="text">
+          <h3>[Research theme one]</h3>
+          <p>[Two or three plain-language sentences: the question, why it matters, how you study it.]</p>
+          <a class="crosslink" href="leisure.html#books">Related reading on my shelf →</a>
+        </div>
+        <figure>
+          <div class="frame">
+            <img src="images/research-1.jpg" alt="[Describe the illustration]"
+                 onerror="this.parentElement.classList.add('missing'); this.remove();">
+            <span class="stand-in">Illustration<br>images/research-1.jpg</span>
+          </div>
+          <figcaption><b>Fig. 1</b> [Caption for the illustration.]</figcaption>
+        </figure>
+      </article>
+      <article class="theme">
+        <div class="text">
+          <h3>[Research theme two]</h3>
+          <p>[Two or three plain-language sentences.]</p>
+        </div>
+        <figure>
+          <div class="frame">
+            <img src="images/research-2.jpg" alt="[Describe the illustration]"
+                 onerror="this.parentElement.classList.add('missing'); this.remove();">
+            <span class="stand-in">Illustration<br>images/research-2.jpg</span>
+          </div>
+          <figcaption><b>Fig. 2</b> [Caption.]</figcaption>
+        </figure>
+      </article>
+      <article class="theme">
+        <div class="text">
+          <h3>[Methods or a side project]</h3>
+          <p>[Optional. Delete this block if you only have two themes.]</p>
+        </div>
+        <figure>
+          <div class="frame">
+            <img src="images/research-3.jpg" alt="[Describe the illustration]"
+                 onerror="this.parentElement.classList.add('missing'); this.remove();">
+            <span class="stand-in">Illustration<br>images/research-3.jpg</span>
+          </div>
+          <figcaption><b>Fig. 3</b> [Caption.]</figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section class="section" id="publications">
+    <div class="section-head">
+      <p class="label">Selected</p>
+      <h2>Publications</h2>
+    </div>
+    <!-- Copy one <li class="entry">…</li> to add a paper. Your name is in <strong>. -->
+    <ol class="entries">
+      <li class="entry">
+        <span class="year">2026</span>
+        <div>
+          <p class="title">[Title of the paper]<span class="status">Under review</span></p>
+          <p class="meta"><strong>Bastug, B.</strong>, [Coauthor, A.], &amp; [Coauthor, B.]. <span class="venue">[Journal]</span>.</p>
+          <p class="actions"><a href="#">Preprint</a><a href="#">Data &amp; code</a></p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="year">2025</span>
+        <div>
+          <p class="title">[Title of the paper]</p>
+          <p class="meta">[Coauthor, A.], <strong>Bastug, B.</strong>, &amp; [Coauthor, B.]. <span class="venue">[Journal], [volume]([issue])</span>, [pages].</p>
+          <p class="actions"><a href="#">PDF</a><a href="#">DOI</a></p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="year">2024</span>
+        <div>
+          <p class="title">[Title of the conference paper]</p>
+          <p class="meta"><strong>Bastug, B.</strong>, &amp; [Coauthor, A.]. <span class="venue">Proceedings of [Conference]</span>.</p>
+          <p class="actions"><a href="#">PDF</a></p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===================== TALKS & PRESENTATIONS ===================== -->
+  <section class="section talks" id="talks">
+    <div class="section-head">
+      <p class="label">Conferences and seminars</p>
+      <h2>Talks &amp; Presentations</h2>
+    </div>
+    <ol class="entries">
+      <li class="entry">
+        <span class="year">Mar 2026</span>
+        <div>
+          <p class="title">[Talk title]<span class="status">Talk</span></p>
+          <p class="meta">[Conference or seminar], [City].</p>
+          <p class="actions"><a href="#">Slides</a></p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="year">Nov 2025</span>
+        <div>
+          <p class="title">[Poster title]<span class="status">Poster</span></p>
+          <p class="meta">[Conference], [City].</p>
+          <p class="actions"><a href="#">Poster PDF</a></p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="year">Jun 2025</span>
+        <div>
+          <p class="title">[Talk title]<span class="status">Invited</span></p>
+          <p class="meta">[Department or lab], [University].</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===================== BRIDGE TO LEISURE ===================== -->
+  <aside class="bridge">
+    <div class="bands" aria-hidden="true"></div>
+    <div class="inner">
+      <p class="label">Outside the lab</p>
+      <h2>Leisure</h2>
+      <p>A catalogue of the books and films I carry with me, and my two book clubs, from the humanities training I never left behind.</p>
+      <p><a class="go" href="leisure.html">Enter the library →</a></p>
+    </div>
+  </aside>
+
+</main>
+
+<footer class="site-footer">
+  <div class="frieze" aria-hidden="true"></div>
+  <div class="wrap bar">
+    <span>© 2026 Berfin Bastug</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+
 </body>
 </html>

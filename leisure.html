@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Leisure · Berfin Bastug</title>
+<meta name="description" content="Books, films and book clubs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&family=Alegreya+Sans:ital,wght@0,400;0,500;1,400&family=Alegreya+Sans+SC:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="leisure">
+
+<!-- You don't need to edit this page to add books or films.
+     Edit the files in the "data" and "notes" folders instead.
+     The intro text below is the only placeholder here. -->
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Berfin Bastug</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#about">About</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#talks">Talks</a>
+      <a class="to-leisure" href="leisure.html" aria-current="page">Leisure</a>
+    </nav>
+  </div>
+  <div class="bands" aria-hidden="true"></div>
+</header>
+
+<main class="wrap">
+  <div class="leisure-head">
+    <h1>Leisure</h1>
+    <p class="subtitle">Books and films I carry with me</p>
+    <p>[A few sentences about this corner of the site: your humanities background, why you keep this library, what you hope a visitor finds here.]</p>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Leisure sections">
+    <button class="tab" role="tab" id="tab-books" aria-controls="panel-books" aria-selected="true">Books<span class="count" id="count-books"></span></button>
+    <button class="tab" role="tab" id="tab-films" aria-controls="panel-films" aria-selected="false">Films<span class="count" id="count-films"></span></button>
+    <button class="tab" role="tab" id="tab-clubs" aria-controls="panel-clubs" aria-selected="false">Book Clubs</button>
+  </div>
+
+  <!-- BOOKS -->
+  <section class="panel" id="panel-books" role="tabpanel" aria-labelledby="tab-books">
+    <div class="now-reading" id="now-reading">
+      <p class="label">Currently reading</p>
+      <div class="now-list" id="now-list"></div>
+    </div>
+
+    <div class="controls" id="book-controls">
+      <div class="views" role="group" aria-label="View">
+        <button type="button" data-view="catalogue" aria-pressed="true">Catalogue</button>
+        <button type="button" data-view="index" aria-pressed="false">Index</button>
+      </div>
+    </div>
+    <div class="result-line">
+      <span class="count-text" id="book-count"></span>
+      <button type="button" class="clear" id="book-clear" hidden>Clear filters</button>
+    </div>
+    <div id="book-view"></div>
+  </section>
+
+  <!-- FILMS -->
+  <section class="panel" id="panel-films" role="tabpanel" aria-labelledby="tab-films" hidden>
+    <div class="controls" id="film-controls"></div>
+    <div class="result-line">
+      <span class="count-text" id="film-count"></span>
+      <button type="button" class="clear" id="film-clear" hidden>Clear filters</button>
+    </div>
+    <div id="film-view"></div>
+  </section>
+
+  <!-- BOOK CLUBS -->
+  <section class="panel" id="panel-clubs" role="tabpanel" aria-labelledby="tab-clubs" hidden>
+    <div class="clubs" id="club-list"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="frieze" aria-hidden="true"></div>
+  <div class="wrap bar">
+    <span>© 2026 Berfin Bastug</span>
+    <span><a href="index.html">Back to the academic pages</a></span>
+  </div>
+</footer>
+
+<script src="data/books.js"></script>
+<script src="data/films.js"></script>
+<script src="data/clubs.js"></script>
+<script src="library.js"></script>
+<script src="leisure.js"></script>
+</body>
+</html>
