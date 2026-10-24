@@ -64,48 +64,52 @@ window.BOOKS = [
     {
     title: "How Proust Can Change Your Life",
     author: "Alain de Botton",
-    country: "UK",
+    country: "United Kingdom",
     finished: "2026-09",
-    isbn: "1509870695"
+    isbn: "978-1509870691"
   },
   {
-    title: "Dominion: How the Christian Revolution Remade the World",
+    title: "Dominion: The Making of the Western Mind",
     author: "Tom Holland",
-    country: "UK",
+    country: "United Kingdom",
     finished: "2026-09-27",
-    isbn: "0465093507"
+    isbn: "0349141207"
   },
   {
-    title: "The Man Who Mistook His Wife for a Hat",
-    author: "Oliver Sacks",
+    title: "Ways of Seeing",
+    author: "John Berger",
     country: "United Kingdom",
-    finished: "2026-08-15",
-    club: "science",
-    clubNote: "Example: a good bridge between case studies and theory."
+    finished: "2026-05-03",
+    club: "lit",
+    isbn: "9780141035796"
   },
   {
-    title: "Mrs Dalloway",
-    author: "Virginia Woolf",
-    country: "United Kingdom",
-    finished: "2026-06"
-  },
-  {
-    title: "Kürk Mantolu Madonna",
-    author: "Sabahattin Ali",
-    country: "Turkey",
-    club: "lit"
-  },
-  {
-    title: "The Buried Giant",
-    author: "Kazuo Ishiguro",
-    country: "United Kingdom",
-    finished: "2026-03-20"
-  },
-  {
-    title: "Searching for Memory",
-    author: "Daniel L. Schacter",
+    title: "Debt: The First 5,000 Years",
+    author: "David Graeber",
     country: "United States",
-    club: "science"
+    finished: "2026-04",
+    isbn: "9781612194196"
+  },
+  {
+    title: "Dopamine Nation",
+    author: "Anna Lembke",
+    country: "United States",
+    finished: "2026-04",
+    isbn: "1472294157"
+  },
+  {
+    title: "The Door",
+    author: "Magda Szabo",
+    country: "Hungary",
+    finished: "2026-02-15",
+    isbn: "978-1-784-87640-1"
+  },
+  {
+    title: "A Heart So White",
+    author: "Javier Marías",
+    country: "Spain",
+    finished: "2026-01-01",
+    isbn: "0141199954"
   },
   {
     title: "Swann's Way",
