@@ -112,17 +112,18 @@ window.BOOKS = [
     isbn: "0141199954"
   },
   {
-    title: "Swann's Way",
-    original: "Du côté de chez Swann",
-    author: "Marcel Proust",
-    country: "France",
-    finished: "2025"
+    title: "Becoming Myself: A Psychiatrist's Memoir",
+    author: "Irvin D. Yalom",
+    country: "United States",
+    finished: "2025-12-14",
+    isbn: "0349410070"
   },
   {
-    title: "Speak, Memory",
-    author: "Vladimir Nabokov",
-    country: "United States",
-    finished: "2025-05-19"
+    title: "Askin Halleri",
+    author: "Alper Hasanoglu",
+    country: "Turkey",
+    finished: "2025-11-29",
+    isbn: "6258393039"
   },
   {
     title: "The Seven Sins of Memory",
