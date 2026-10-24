@@ -66,7 +66,7 @@ window.BOOKS = [
     author: "Alain de Botton",
     country: "United Kingdom",
     finished: "2026-09",
-    isbn: "978-1509870691"
+    cover: "images/covers/proust.jpeg"
   },
   {
     title: "Dominion: The Making of the Western Mind",
@@ -81,7 +81,7 @@ window.BOOKS = [
     country: "United Kingdom",
     finished: "2026-05-03",
     club: "lit",
-    isbn: "9780141035796"
+    isbn: "images/covers/john-berger.jpeg"
   },
   {
     title: "Debt: The First 5,000 Years",
