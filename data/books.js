@@ -48,10 +48,9 @@
 window.BOOKS = [
    {
       title: "There There",
-      original: "There There",
       author: "Tommy Orange",
-      country: "US",
-      status: "finished: 17.10.2026"
+      country: "United States",
+      status: "2026-10-17",
       isbn: "0525436146"
   },
   {
