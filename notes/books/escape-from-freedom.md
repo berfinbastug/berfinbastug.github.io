@@ -1,0 +1,4 @@
+## Quotations 
+
+> We have reasons to doubt whether the powerful masters of Renaissance capitalism were as happy and as secure as they are often pictured. It seems that the new freedom brought two things to them: an increased feeling of strength and at the same time an increased isolation, doubt, scepticism, and —resulting from all these-anxiety. It is the same contradiction that we find in the philosophic writings of the humanists. Side by side with their emphasis on human dignity, individuality, and strength, they exhibited insecurity and despair in their philosophy? This underlying insecurity resulting from the position of an isolated individual in a hostile world tends to explain the genesis of a character trait which was, as Burckhardt has pointed out, characteristic of the individual of the Renaissance and not present, at least in the same intensity, in the member of the medieval social structure: his passionate craving for fame. 
+> 
