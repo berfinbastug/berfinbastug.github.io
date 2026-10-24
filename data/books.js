@@ -50,22 +50,30 @@ window.BOOKS = [
       title: "There There",
       author: "Tommy Orange",
       country: "United States",
-      status: "2026-10-17",
+      finished: "2026-10-17",
       isbn: "0525436146"
   },
   {
-    title: "Thinking, Fast and Slow",
-    author: "Daniel Kahneman",
+    title: "Re-Engineering Philosophy for Limited Beings",
+    author: "William C. Wimsatt",
     country: "United States",
-    status: "reading"
+    finished: "2026-09-27",
+    club: "science",
+    isbn: "0674015452"
+  },
+    {
+    title: "How Proust Can Change Your Life",
+    author: "Alain de Botton",
+    country: "UK",
+    finished: "2026-09",
+    isbn: "1509870695"
   },
   {
-    title: "Collected Fictions",
-    author: "Jorge Luis Borges",
-    country: "Argentina",
-    finished: "2026-09-28",
-    club: "lit",
-    clubNote: "Example: we spent the whole evening on one story about perfect memory."
+    title: "Dominion: How the Christian Revolution Remade the World",
+    author: "Tom Holland",
+    country: "UK",
+    finished: "2026-09-27",
+    isbn: "0465093507"
   },
   {
     title: "The Man Who Mistook His Wife for a Hat",
