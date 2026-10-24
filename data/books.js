@@ -13,7 +13,21 @@
    status     "reading"                        for a book you're reading now
    club       "lit" or "science"               if you read it for a book club
    clubNote   "…"                              one line about the club discussion
-   cover      "images/covers/name.jpg"         optional cover picture
+   isbn       "978XXXXXXXXXX"                  the book's ISBN: its cover is fetched
+                                               automatically (see COVERS below)
+   cover      "images/covers/name.jpg"         your own cover picture (used instead
+                                               of the automatic one)
+
+   COVERS
+   1. Easiest: add the ISBN. It's the 13-digit number starting with
+      978 or 979, on the back cover by the barcode or on the
+      copyright page. The cover comes from Open Library, a free
+      book catalogue.
+   2. If no cover appears (common for some Turkish editions), or
+      you prefer your own: put a picture in the images/covers
+      folder and add  cover: "images/covers/<name>.jpg".
+      A photo of your copy or the publisher's cover image works.
+   3. With neither, the book gets a painted tile with its title.
 
    NOTES AND QUOTATIONS live in their own file, one per book:
      notes/books/<file name>.md

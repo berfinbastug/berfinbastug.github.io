@@ -67,13 +67,33 @@
     return '<span class="badge ' + (id === "science" ? "science" : "") + '">' + esc(c.kind + " club") + "</span>";
   }
   function entryURL(kind, item) { return "entry.html#" + kind + "." + idOf(item); }
-  function coverHTML(item, href) {
-    var c = pigment(item);
-    var pic = item.cover || item.poster;
-    var tag = href ? "a" : "span";
-    return "<" + tag + ' class="cover"' + (href ? ' href="' + href + '" tabindex="-1"' : "") + ' style="background:' + c[0] + ";color:" + c[1] + '" aria-hidden="true">' +
-      (pic ? '<img src="' + esc(pic) + '" alt="" loading="lazy">' : '<span class="glyph">' + esc(glyph(item.title)) + "</span>") + "</" + tag + ">";
+  // Which picture to show: your own image first, then an automatic
+  // cover from Open Library (books with an ISBN), otherwise none.
+  function pictureOf(item) {
+    if (item.cover) return item.cover;
+    if (item.poster) return item.poster;
+    if (item.isbn) {
+      var isbn = String(item.isbn).replace(/[^0-9Xx]/g, "");
+      if (isbn) return "https://covers.openlibrary.org/b/isbn/" + isbn + "-L.jpg?default=false";
+    }
+    return "";
   }
+  // A cover: the painted tile is always underneath; the picture sits on
+  // top and removes itself if it can't load, so the tile shows instead.
+  function coverHTML(item, href, small) {
+    var c = pigment(item);
+    var pic = pictureOf(item);
+    var tag = href ? "a" : "span";
+    var tile = small ? "" :
+      '<span class="tile-t">' + esc(item.title) + '</span><span class="tile-a">' + esc(item.author || item.director || "") + "</span>";
+    return "<" + tag + ' class="cover' + (small ? " small" : "") + '"' + (href ? ' href="' + href + '" tabindex="-1"' : "") + ' aria-hidden="true">' +
+      '<span class="tile" style="background:' + c[0] + ";color:" + c[1] + '">' + tile + "</span>" +
+      (pic ? '<img class="cover-img" src="' + esc(pic) + '" alt="" loading="lazy">' : "") + "</" + tag + ">";
+  }
+  document.addEventListener("error", function (e) {
+    var t = e.target;
+    if (t && t.classList && t.classList.contains("cover-img")) t.remove();
+  }, true);
 
   // Catalogue numbers: in the order things were added (bottom of the list = 001)
   BOOKS.forEach(function (b, i) { b._no = BOOKS.length - i; b._kind = "book"; });

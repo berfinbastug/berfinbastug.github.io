@@ -10,7 +10,10 @@
    country    "Country"
    year       2004                        year the film came out
    watched    "2026-10-24"                day you watched it, if you know it
-   poster     "images/posters/name.jpg"   optional picture
+   poster     "images/posters/name.jpg"   the film's poster: put the picture
+                                          in the images/posters folder.
+                                          Without it, the film gets a painted
+                                          tile with its title.
 
    YOUR NOTES live in their own file, one per film:
      notes/films/<file name>.md

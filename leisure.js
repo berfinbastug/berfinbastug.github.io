@@ -97,19 +97,15 @@
   addControls("book-controls", "bf-", BOOK_DEFS, "Title, author…");
   var bookView = "catalogue";
 
-  function bookRow(b) {
+  function bookCard(b) {
     var url = L.entryURL("book", b);
-    var who = [b.author ? linkish("book", "author", b.author) : "", b.country ? linkish("book", "country", b.country) : ""].filter(Boolean).join(" · ");
     var foot = [];
-    if (b.status === "reading") foot.push("<span>Reading now</span>");
-    else if (b.finished) foot.push("<span>Read " + esc(L.fmtDate(b.finished)) + "</span>");
     if (b.club) foot.push(L.clubBadge(b.club));
     foot.push(hint("book", b));
-    return '<li class="entry-row"><span class="inv">No. ' + L.pad(b._no) + "</span>" + L.coverHTML(b, url) +
-      '<div class="entry-body"><a class="entry-title" href="' + url + '">' + esc(b.title) +
-      (b.original ? '<span class="orig">' + esc(b.original) + "</span>" : "") + "</a>" +
-      (who ? '<div class="entry-who">' + who + "</div>" : "") +
-      '<div class="entry-foot">' + foot.join("") + "</div></div></li>";
+    return '<li class="book">' + L.coverHTML(b, url) +
+      '<a class="book-title" href="' + url + '">' + esc(b.title) + "</a>" +
+      (b.author ? '<span class="book-by">' + esc(b.author) + "</span>" : "") +
+      '<div class="book-foot">' + foot.join("") + "</div></li>";
   }
 
   function indexHTML() {
@@ -150,7 +146,7 @@
     document.getElementById("book-count").textContent =
       (active ? list.length + " of " + BOOKS.length : list.length) + (list.length === 1 ? " book" : " books");
     box.innerHTML = list.length
-      ? '<ol class="catalogue">' + list.map(bookRow).join("") + "</ol>"
+      ? '<ol class="grid">' + list.map(bookCard).join("") + "</ol>"
       : '<p class="empty">No books match. Try clearing a filter.</p>';
     fillHints(box);
   }
@@ -159,7 +155,7 @@
   var reading = BOOKS.filter(function (b) { return b.status === "reading"; });
   if (!reading.length) document.getElementById("now-reading").hidden = true;
   else document.getElementById("now-list").innerHTML = reading.map(function (b) {
-    return '<a class="now-item" href="' + L.entryURL("book", b) + '"><span class="mini" style="background:' + L.pigment(b)[0] + '"></span>' +
+    return '<a class="now-item" href="' + L.entryURL("book", b) + '">' + L.coverHTML(b, null, true) +
       '<span><span class="t">' + esc(b.title) + '</span><span class="a">' + esc(b.author) + "</span></span></a>";
   }).join("");
 
@@ -187,15 +183,13 @@
   ];
   addControls("film-controls", "ff-", FILM_DEFS, "Title, director…");
 
-  function filmRow(f) {
+  function filmCard(f) {
     var url = L.entryURL("film", f);
-    var who = [f.director ? linkish("film", "director", f.director) : "", f.country ? linkish("film", "country", f.country) : "", f.year ? esc(f.year) : ""]
-      .filter(Boolean).join(" · ");
-    return '<li class="entry-row"><span class="inv">No. ' + L.pad(f._no) + "</span>" + L.coverHTML(f, url) +
-      '<div class="entry-body"><a class="entry-title" href="' + url + '">' + esc(f.title) +
-      (f.original ? '<span class="orig">' + esc(f.original) + "</span>" : "") + "</a>" +
-      (who ? '<div class="entry-who">' + who + "</div>" : "") +
-      '<div class="entry-foot">' + (f.watched ? "<span>Watched " + esc(L.fmtDate(f.watched)) + "</span>" : "") + hint("film", f) + "</div></div></li>";
+    var by = [f.director, f.year].filter(Boolean).join(", ");
+    return '<li class="book">' + L.coverHTML(f, url) +
+      '<a class="book-title" href="' + url + '">' + esc(f.title) + "</a>" +
+      (by ? '<span class="book-by">' + esc(by) + "</span>" : "") +
+      '<div class="book-foot">' + hint("film", f) + "</div></li>";
   }
   function renderFilms() {
     var s = read("ff-", FILM_DEFS);
@@ -208,7 +202,7 @@
     });
     document.getElementById("film-count").textContent = (active ? list.length + " of " + FILMS.length : list.length) + (list.length === 1 ? " film" : " films");
     var box = document.getElementById("film-view");
-    box.innerHTML = list.length ? '<ol class="catalogue">' + list.map(filmRow).join("") + "</ol>" : '<p class="empty">No films match. Try clearing a filter.</p>';
+    box.innerHTML = list.length ? '<ol class="grid">' + list.map(filmCard).join("") + "</ol>" : '<p class="empty">No films match. Try clearing a filter.</p>';
     fillHints(box);
   }
   document.getElementById("film-controls").addEventListener("input", renderFilms);
