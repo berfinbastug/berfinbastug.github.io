@@ -81,7 +81,7 @@ window.BOOKS = [
     country: "United Kingdom",
     finished: "2026-05-03",
     club: "lit",
-    isbn: "images/covers/john-berger.jpeg"
+    cover: "images/covers/john-berger.jpeg"
   },
   {
     title: "Debt: The First 5,000 Years",
@@ -95,7 +95,7 @@ window.BOOKS = [
     author: "Anna Lembke",
     country: "United States",
     finished: "2026-04",
-    isbn: "1472294157"
+    cover: "images/covers/dopamine-nation.jpeg"
   },
   {
     title: "The Door",
@@ -126,10 +126,34 @@ window.BOOKS = [
     isbn: "6258393039"
   },
   {
-    title: "The Seven Sins of Memory",
-    author: "Daniel L. Schacter",
-    country: "United States",
-    finished: "2025-02-10",
-    club: "science"
+    title: "The Course of Love",
+    author: "Alain de Botton",
+    country: "United Kingdom",
+    finished: "2025-11-12",
+    club: "lit"
+  },
+  {
+    title: "Promise at Dawn",
+    author: "Romain Gary",
+    country: "France",
+    finished: "2025-17-10"
+  },
+  {
+    title: "The Master and Margarita",
+    author: "Mikhail Bulgakov",
+    finished: "2025-01-09",
+    club: "lit"
+  },
+  {
+    title: "The Picture of Dorian Gray",
+    author: "Oscar Wilde",
+    country: "United Kingdom",
+    finished: "2025-05-07"
+  },
+  {
+    title: "The Picture of Dorian Gray",
+    author: "Oscar Wilde",
+    country: "United Kingdom",
+    finished: "2025-05-07"
   }
 ];
