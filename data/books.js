@@ -364,7 +364,67 @@ window.BOOKS = [
   {
     title: "The Cherry Orchard",
     author: "Anton Chekhov",
-    country: "Russiaa",
+    country: "Russia",
     finished: "2022-01-03"
+  },
+  {
+    title: "The Cocktail Party",
+    author: "T.S. Eliot",
+    country: "United Kingdom",
+    finished: "2022-25-01"
+  },
+  {
+    title: "Things Fall Apart",
+    author: "Chinua Achebe",
+    country: "Nigeria",
+    finished: "2021-26-12"
+  },
+  {
+    title: "Antigone",
+    author: "Sophocles",
+    country: "Greece",
+    finished: "2021-01-08"
+  },
+  {
+    title: "Origins of Totalitarianism",
+    author: "Hannah Arendt",
+    country: "Germany",
+    finished: "2021-01-07"
+  },
+  {
+    title: "Mrs. Dalloway",
+    author: "Virginia Woolf",
+    country: "United Kingdom",
+    finished: "2021-10-06"
+  },
+  {
+    title: "Alice in Wonderland",
+    author: "Lewis Carroll",
+    country: "United Kingdom",
+    finished: "2021-01-04"
+  },
+  {
+    title: "General Theory of Oblivion",
+    author: "José Eduardo Agualusa",
+    country: "Angola",
+    finished: "2021-01-03"
+  },
+  {
+    title: "Narcissus and Goldmund",
+    author: "Herman Hesse",
+    country: "Germany",
+    finished: "2021-01-02"
+  },
+  {
+    title: "Don Quixote",
+    author: "Cervantes",
+    country: "Spain",
+    finished: "2020-01-04"
+  },
+  {
+    title: "On Photography",
+    author: "Susan Sontag",
+    country: "United States",
+    finished: "2020-01-02"
   },
 ];
