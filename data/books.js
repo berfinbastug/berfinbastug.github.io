@@ -46,13 +46,13 @@
    ============================================================ */
 
 window.BOOKS = [
-  {
-    title: "The Museum of Innocence",
-    original: "Masumiyet Müzesi",
-    author: "Orhan Pamuk",
-    country: "Turkey",
-    status: "reading",
-    club: "lit"
+   {
+      title: "There There",
+      original: "There There",
+      author: "Tommy Orange",
+      country: "US",
+      status: "finished: 17.10.2026"
+      isbn: "0525436146"
   },
   {
     title: "Thinking, Fast and Slow",
