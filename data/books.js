@@ -319,36 +319,42 @@ window.BOOKS = [
     title: "Death of a Salesman",
     author: "Arthur Miller",
     country: "United States",
+    cover: "images/covers/salesman.jpg",
     finished: "2023-01-01"
   },
   {
     title: "Nibelungenlied",
-    author: "Arthur Miller",
+    author: "-",
     country: "Germany",
+    cover: "images/covers/nibel.jpg",
     finished: "2022-10-12"
   },
   {
     title: "Adim Agop Memleketim Tokat",
     author: "Agop Arslanyan",
     country: "Turkey",
+    cover: "images/covers/agop.jpg",
     finished: "2022-28-08"
   },
   {
     title: "Gönül ki Yetişmekte",
     author: "Gustave Flaubert",
     country: "France",
+    cover: "images/covers/flaubert.jpg",
     finished: "2022-15-08"
   },
   {
     title: "The Hunchback of Notre Dame",
     author: "Victor Hugo",
     country: "France",
+    cover: "images/covers/notre-dame.jpg",
     finished: "2022-04-07"
   },
   {
-    title: "Don't Look Back in Anger",
+    title: "Look Back in Anger",
     author: "John Osborne",
     country: "United Kingdom",
+    cover: "images/covers/look-back-in-anger.jpg",
     finished: "2022-24-05"
   },
   {
@@ -367,6 +373,7 @@ window.BOOKS = [
     title: "The Cocktail Party",
     author: "T.S. Eliot",
     country: "United Kingdom",
+    cover: "images/covers/cocktail-party.jpg",
     finished: "2022-25-01"
   },
   {
@@ -379,6 +386,7 @@ window.BOOKS = [
     title: "Antigone",
     author: "Sophocles",
     country: "Greece",
+    cover: "images/covers/antigone.jpg",
     finished: "2021-01-08"
   },
   {
